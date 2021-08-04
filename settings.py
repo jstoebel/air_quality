@@ -8,4 +8,4 @@ class Settings(BaseSettings):
     IFTTT_WEBHOOK_KEY: str
 
 
-settings = Settings()
+settings = Settings(_env_file=".env")
